@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.message {
+    @apply bg-white border border-gray-200 rounded-2xl p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700;
+}
+
+.shiki {
+    @apply overflow-x-scroll p-4 rounded m-1 shadow-sm;
+}
+
+.message h1, .message h2, .message h3, .message h4, .message h5, .message h6 {
+    @apply font-semibold;
+}
+
+.message h1 {
+    @apply text-3xl;
+}
+
+.message h2 {
+    @apply text-2xl;
+}
+
+.message h3 {
+    @apply text-xl;
+}
+
+.message h4 {
+    @apply text-lg;
+}
+
+.message blockquote {
+    @apply border-l-4 border-gray-200 pl-4;
+}
